@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raindrop Demos - Reddit Community Requests</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            text-align: center;
+        }
+        
+        .header {
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #9333ea 0%, #a855f7 50%, #c084fc 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #4ecdc4, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #888;
+            margin-bottom: 40px;
+        }
+        
+        .demos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .demo-card {
+            background: rgba(26, 26, 46, 0.8);
+            border: 1px solid #40407a;
+            border-radius: 12px;
+            padding: 24px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        .demo-card:hover {
+            transform: translateY(-4px);
+            border-color: #a855f7;
+            box-shadow: 0 8px 25px rgba(168, 85, 247, 0.2);
+        }
+        
+        .demo-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #4ecdc4;
+        }
+        
+        .demo-description {
+            color: #b0b0b0;
+            margin-bottom: 12px;
+        }
+        
+        .demo-tech {
+            font-size: 12px;
+            color: #888;
+            background: rgba(64, 64, 122, 0.3);
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        
+        .footer {
+            border-top: 1px solid #40407a;
+            padding-top: 20px;
+            color: #888;
+        }
+        
+        .footer a {
+            color: #a855f7;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            color: #c084fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">R</div>
+            <h1>Raindrop Demos</h1>
+            <p class="subtitle">Apps built with Claude Code & Raindrop for the Reddit community</p>
+        </div>
+        
+        <div class="demos-grid">
+            <a href="/calculator-front-end/" class="demo-card">
+                <div class="demo-title">🧮 Retro Calculator</div>
+                <div class="demo-description">
+                    A vintage-style calculator with global calculation history. 
+                    Perform math operations and see calculations from users worldwide in real-time.
+                </div>
+                <div class="demo-tech">Frontend: Vanilla JS • Backend: Raindrop API</div>
+            </a>
+            
+            <!-- Future demos will be added here -->
+            <div class="demo-card" style="opacity: 0.6; cursor: not-allowed;">
+                <div class="demo-title">🔮 Coming Soon</div>
+                <div class="demo-description">
+                    More Reddit community requests coming soon!
+                    Have an idea? Submit it on Reddit.
+                </div>
+                <div class="demo-tech">Your suggestion here</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Built with ❤️ using <a href="https://liquidmetal.ai" target="_blank">Raindrop by LiquidMetal.ai</a></p>
+            <p><a href="https://forms.gle/PCtb7r2K2NC6ihWH7" target="_blank">Give Claude infrastructure powers - Join MCP waitlist →</a></p>
+        </div>
+    </div>
+</body>
+</html>
