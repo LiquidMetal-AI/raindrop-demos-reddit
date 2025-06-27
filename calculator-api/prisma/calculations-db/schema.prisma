@@ -1,0 +1,30 @@
+generator kysely {
+  provider = "prisma-kysely"
+
+  // Optionally provide a destination directory for the generated file
+  // and a filename of your choice
+  output       = "../../src/db/calculationsDb"
+  fileName     = "types.ts"
+  // Optionally generate runtime enums to a separate file
+  enumFileName = "enums.ts"
+  readOnlyIds  = true
+}
+
+datasource db {
+  provider = "sqlite"
+  // url must be set even though it is unused under the driverAdapters pattern
+  url      = "https://example.com/non-existant-database/required-but-unused-variable"
+}
+
+model Calculation {
+  id         String   @id @default(cuid())
+  expression String   // The mathematical expression
+  result     Float    // The calculated result
+  timestamp  DateTime // When calculation was performed
+  user_id    String?  // For tracking/analytics (optional)
+  created_at DateTime @default(now()) // Record creation time
+
+  // Index on timestamp for efficient querying as per PRD performance requirements
+  @@index([timestamp])
+  @@index([user_id]) // Additional index for user-based queries
+}

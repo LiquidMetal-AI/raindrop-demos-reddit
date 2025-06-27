@@ -2,3 +2,5 @@
 .claude
 claude.md
 .raindrop.config.json
+calculator-api/node_modules/
+calculator-api/dist/
