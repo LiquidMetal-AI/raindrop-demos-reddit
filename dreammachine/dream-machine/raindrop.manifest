@@ -1,0 +1,15 @@
+application "dream-machine" {
+  service "api" {
+    domain {
+      cname = "dream-machine-api"
+    }
+  }
+
+  sql_database "dreams-db" {
+    
+  }
+
+  smartbucket "dreams-bucket" {
+    
+  }
+}

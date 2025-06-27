@@ -1,0 +1,22 @@
+generator kysely {
+  provider = "prisma-kysely"
+  output       = "../../src/db/dreams-db"
+  fileName     = "types.ts"
+  enumFileName = "enums.ts"
+  readOnlyIds  = true
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "https://example.com/non-existant-database/required-but-unused-variable"
+}
+
+model Dreams {
+  id               String    @id @default(cuid())
+  content          String
+  title            String?
+  theme            String?
+  timestamp        DateTime  @default(now())
+  analysis_results String?   // JSON stored as string for SQLite compatibility
+}
+
