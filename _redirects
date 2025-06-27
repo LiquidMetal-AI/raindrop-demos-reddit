@@ -2,8 +2,8 @@
 /calculator/* /calculator/calculator-front-end/:splat 200
 /calculator /calculator/calculator-front-end/ 200
 
-/dreammachine/* /dreammachine/dreammachine-front-end/:splat 200
-/dreammachine /dreammachine/dreammachine-front-end/ 200
+/dreammachine-front-end/* /dreammachine-front-end/:splat 200
+/dreammachine-front-end /dreammachine-front-end/ 200
 
 # Future demos can be added here
 # /demo2/* /demo2-front-end/:splat 200
