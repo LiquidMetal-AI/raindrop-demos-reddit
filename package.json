@@ -1,0 +1,12 @@
+{
+  "name": "raindrop-demos-reddit",
+  "version": "1.0.0",
+  "description": "Collection of apps built with Raindrop for Reddit community requests",
+  "scripts": {
+    "build": "echo 'Building multi-project site...' && echo 'Build complete!'",
+    "dev": "echo 'Development server not needed - static files'"
+  },
+  "keywords": ["raindrop", "demos", "reddit", "calculator"],
+  "author": "LiquidMetal.ai",
+  "license": "MIT"
+}

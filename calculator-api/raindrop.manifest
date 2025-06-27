@@ -1,0 +1,9 @@
+application "calculator-api" {
+  service "api" {
+    domain {
+      cname = "calculator-api"
+    }
+  }
+  
+  sql_database "calculations-db" {}
+}
