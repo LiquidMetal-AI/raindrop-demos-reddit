@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Archaeology - Explore the Collective Unconscious</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="clouds"></div>
+    
+    <div class="app-container">
+        <!-- Main Dream Interface -->
+        <div class="dream-interface">
+            <div class="dream-header">
+                <h1>Dream Archaeology</h1>
+                <p class="subtitle">Explore the Collective Unconscious</p>
+            </div>
+            
+            <div class="dream-input-container">
+                <div class="dream-input-wrapper">
+                    <textarea 
+                        id="dreamInput" 
+                        class="dream-input" 
+                        placeholder="Describe your dream... What images, emotions, or stories emerged from your unconscious mind?"
+                        rows="6"
+                    ></textarea>
+                    <div class="input-actions">
+                        <button class="btn btn-primary" id="analyzeDream">
+                            <span class="btn-text">Analyze Dream</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dream Analysis Display -->
+            <div class="analysis-display" id="analysisDisplay" style="display: none;">
+                <div class="analysis-header">
+                    <h3>🌙 Dream Analysis</h3>
+                    <p>AI interpretation of your dream</p>
+                </div>
+                <div class="analysis-content" id="analysisContent">
+                    <!-- Analysis will be populated here -->
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Dream Explorer Panel -->
+        <div class="dream-explorer">
+            <div class="explorer-header">
+                <h2>Dream Explorer</h2>
+                <button class="back-to-all-btn" id="backToAllBtn" style="display: none;">← All Dreams</button>
+                <div class="live-indicator">
+                    <div class="pulse-dot"></div>
+                    <span>LIVE</span>
+                </div>
+            </div>
+            
+            <div class="dreams-list" id="dreamsList">
+                <div class="dream-card">
+                    <div class="dream-preview">
+                        <h4>Flying Over Mountains</h4>
+                        <p>"I was soaring above snow-capped peaks, feeling completely free..."</p>
+                    </div>
+                    <div class="dream-meta">
+                        <span class="timestamp">2 min ago</span>
+                    </div>
+                </div>
+                
+                <div class="dream-card">
+                    <div class="dream-preview">
+                        <h4>Endless Ocean</h4>
+                        <p>"Deep blue water stretched infinitely, I couldn't find the shore..."</p>
+                    </div>
+                    <div class="dream-meta">
+                        <span class="timestamp">5 min ago</span>
+                    </div>
+                </div>
+                
+                <div class="dream-card">
+                    <div class="dream-preview">
+                        <h4>Being Chased</h4>
+                        <p>"Running through dark corridors, something behind me getting closer..."</p>
+                    </div>
+                    <div class="dream-meta">
+                        <span class="timestamp">12 min ago</span>
+                    </div>
+                </div>
+                
+                <div class="dream-card">
+                    <div class="dream-preview">
+                        <h4>Falling Into Stars</h4>
+                        <p>"I let go and fell upward into a field of brilliant stars..."</p>
+                    </div>
+                    <div class="dream-meta">
+                        <span class="timestamp">18 min ago</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="explorer-footer">
+                <span>Dreams from the collective unconscious</span>
+                <div class="explorer-instructions" id="explorerInstructions" style="display: none;">
+                    <small>💡 Click on any similar dream to generate a continuation</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Dream Theater Modal -->
+    <div class="dream-theater" id="dreamTheater">
+        <div class="theater-content">
+            <div class="theater-header">
+                <h3>Dream Continuation</h3>
+                <button class="close-theater" id="closeTheater">×</button>
+            </div>
+            <div class="theater-body">
+                <p id="dreamContinuation">Your dream continues...</p>
+            </div>
+            <div class="theater-controls">
+                <button class="btn btn-primary" id="generateNew">Generate New</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="app-footer">
+        <div class="footer-content">
+            <div class="footer-branding">
+                <span class="footer-text">Built with ❤️ using <span class="raindrop-text">Raindrop</span> by <a href="https://liquidmetal.ai" target="_blank" rel="noopener noreferrer" class="liquidmetal-link">LiquidMetal.ai</a></span>
+            </div>
+            <a href="https://forms.gle/PCtb7r2K2NC6ihWH7" target="_blank" rel="noopener noreferrer" class="footer-link">
+                Give Claude infrastructure powers - Join MCP waitlist →
+            </a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
