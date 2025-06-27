@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Collection of apps built with Raindrop for Reddit community requests",
   "scripts": {
-    "build": "echo 'Building multi-project site...' && echo 'Build complete!'",
+    "build": "mkdir -p dist && cp -r *.html *.css *.js calculator _redirects dist/ 2>/dev/null || true",
     "dev": "echo 'Development server not needed - static files'"
   },
   "keywords": ["raindrop", "demos", "reddit", "calculator"],
