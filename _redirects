@@ -1,6 +1,6 @@
 # Cloudflare Pages redirects for multi-project setup
-/calculator/* /calculator-front-end/:splat 200
-/calculator /calculator-front-end/ 200
+/calculator/* /calculator/calculator-front-end/:splat 200
+/calculator /calculator/calculator-front-end/ 200
 
 # Future demos can be added here
 # /demo2/* /demo2-front-end/:splat 200
